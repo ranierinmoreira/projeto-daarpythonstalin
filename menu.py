@@ -1,34 +1,49 @@
-def mostrar_menu():
-    print("\n===== MENU PRINCIPAL =====")
-    print("1. Dizer olá")
-    print("2. Somar dois números")
-    print("3. Sair")
 
-def dizer_ola():
-    print("Olá, seja bem-vindo!")
 
-def somar_numeros():
-    try:
-        a = float(input("Digite o primeiro número: "))
-        b = float(input("Digite o segundo número: "))
-        print(f"A soma é: {a + b}")
-    except ValueError:
-        print("Por favor, digite apenas números.")
 
-def main():
+# Lista de usuários e senhas (simulação)
+usuarios = {
+    "admin": "1234",
+    "usuario": "senha"
+}
+
+def login():
+    print("\n===== TELA DE LOGIN =====")
+    tentativas = 5
+
+    while tentativas > 0:
+        usuario = input("Usuário: ")
+        senha = input("Senha: ")
+
+        if usuario in usuarios and usuarios[usuario] == senha:
+            print(f"✅ Login bem-sucedido. Bem-vindo, {usuario}!\n")
+            return True
+        else:
+            tentativas -= 1
+            print(f"❌ Usuário ou senha incorretos. Tentativas restantes: {tentativas}")
+
+    print("🚫 Número máximo de tentativas atingido. Encerrando.")
+    return False
+
+def menu_principal():
     while True:
-        mostrar_menu()
+        print("\n===== MENU PRINCIPAL =====")
+        print("1. Dizer olá")
+        print("2. Sair")
         escolha = input("Escolha uma opção: ")
 
         if escolha == '1':
-            dizer_ola()
+            print("Olá! Você está logado com sucesso.")
         elif escolha == '2':
-            somar_numeros()
-        elif escolha == '3':
             print("Saindo... Até logo!")
             break
         else:
-            print("Opção inválida, tente novamente.")
+            print("Opção inválida.")
+
+def main():
+    if login():
+        menu_principal()
 
 if __name__ == "__main__":
     main()
+
