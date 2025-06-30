@@ -35,7 +35,7 @@ def menu_principal():
         if escolha == '1':
             print("Olá! Você está logado com sucesso.")
         elif escolha == '2':
-            print("Saindo... Até logo!")
+            print("Saindo... Até logo! Estaremos aguardando você aqui.")
             break
         else:
             print("Opção inválida.")
