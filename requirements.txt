@@ -1,0 +1,19 @@
+# Requisitos para o Projeto Daar Python Stalin
+# Console Retrô inspirado nos videogames clássicos
+
+# Python 3.7+ é necessário
+# Não são necessárias dependências externas - usa apenas bibliotecas padrão do Python
+
+# Bibliotecas padrão utilizadas:
+# - os (sistema operacional)
+# - sys (sistema)
+# - time (tempo e delays)
+# - json (armazenamento de dados)
+# - datetime (datas e horários)
+# - random (números aleatórios)
+# - math (funções matemáticas)
+
+# Para uma experiência completa, recomenda-se:
+# - Terminal com suporte a cores ANSI
+# - Fonte monospace para melhor visualização da arte ASCII
+# - Resolução mínima de 80x24 caracteres
