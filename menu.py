@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -107,10 +108,46 @@ def main():
     while True:
         mostrar_menu()
         escolha = input("\n🎯 Escolha uma opção: ").strip()
+=======
+
+
+
+# Lista de usuários e senhas (simulação)
+usuarios = {
+    "admin": "1234",
+    "usuario": "senha"
+}
+
+def login():
+    print("\n===== TELA DE LOGIN =====")
+    tentativas = 5
+
+    while tentativas > 0:
+        usuario = input("Usuário: ")
+        senha = input("Senha: ")
+
+        if usuario in usuarios and usuarios[usuario] == senha:
+            print(f"✅ Login bem-sucedido. Bem-vindo, {usuario}!\n")
+            return True
+        else:
+            tentativas -= 1
+            print(f"❌ Usuário ou senha incorretos. Tentativas restantes: {tentativas}")
+
+    print("🚫 Número máximo de tentativas atingido. Encerrando.")
+    return False
+
+def menu_principal():
+    while True:
+        print("\n===== MENU PRINCIPAL =====")
+        print("1. Dizer olá")
+        print("2. Sair")
+        escolha = input("Escolha uma opção: ")
+>>>>>>> 144d771929d0f9e69ef9ac30bdb95d223d4a677d
 
         if escolha == '1':
-            dizer_ola()
+            print("Olá! Você está logado com sucesso.")
         elif escolha == '2':
+<<<<<<< HEAD
             somar_numeros()
         elif escolha == '3':
             jogo_adivinhacao()
@@ -125,6 +162,17 @@ def main():
             print("❌ Opção inválida, tente novamente.")
         
         input("\n⏎ Pressione Enter para continuar...")
+=======
+            print("Saindo... Até logo! Estaremos aguardando você aqui.")
+            break
+        else:
+            print("Opção inválida.")
+
+def main():
+    if login():
+        menu_principal()
+>>>>>>> 144d771929d0f9e69ef9ac30bdb95d223d4a677d
 
 if __name__ == "__main__":
     main()
+
