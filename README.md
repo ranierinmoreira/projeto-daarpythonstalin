@@ -131,5 +131,6 @@ Este projeto é de código aberto e está disponível sob a licença MIT.
 ## 🎮 Nostalgia Garantida!
 
 Desfrute da nostalgia dos videogames clássicos enquanto aprende e se diverte com Python! 
+#UPDATE
 
 **Divirta-se jogando! 🎮✨**
