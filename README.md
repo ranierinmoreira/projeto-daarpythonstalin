@@ -1,6 +1,7 @@
 # projeto-daarpythonstalin 🎮🐍
 
 > Console retrô em Python com estilo inspirado nos videogames clássicos dos anos 90!
+E eu tava com tempo e aproveitei para usar a IA para ajudar a desenvolver essa perola 😁😁😁
 
 ## 💡 Sobre o projeto
 
@@ -133,3 +134,5 @@ Este projeto é de código aberto e está disponível sob a licença MIT.
 Desfrute da nostalgia dos videogames clássicos enquanto aprende e se diverte com Python! 
 
 **Divirta-se jogando! 🎮✨**
+
+Vou pedir um favor quem puder me dê dicas para melhorar o projetinho ❤️
